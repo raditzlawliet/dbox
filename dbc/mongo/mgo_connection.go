@@ -179,3 +179,7 @@ func (c *Connection) Close() {
 		c.session.Close()
 	}
 }
+
+func (c *Connection) Session() *mgo.Session {
+	return c.session
+}
